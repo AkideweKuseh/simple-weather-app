@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/extra.css" />
+    <title>T-Reaport</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toggle-button" onclick="toggleDarkMode()"></div>
+      <a href="index.html"><button class="arrow"><strong>&larr;</strong></button></a>
+      <div class="logo">
+        <img src="assets/logo.png" alt="our logo" width="40%">
+      </div>
+         <form action=“” method=“post”>
+             <legend>Feedback Form</legend>
+              <p>Please fill in this form and share your feedback with us.</p>
+               <label for=“name”>Name:</label>
+                <input type=“text” id=“name” name=“name” required><br>
+                 <label for=“email”>Email:</label>
+                  <input type=“email” id=“email” name=“email” required><br> 
+                  <label for=“message”>Message:</label> 
+                  <textarea id=“message” name=“message” rows=“5” cols=30></textarea><br>
+                  <button type="submit">Submit</button> 
+          </form> 
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

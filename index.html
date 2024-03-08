@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/extra.css" />
+    <title>T-Weather</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toggle-button" onclick="toggleDarkMode()"></div>
+      <a href="report.html"><button class="arrow"><strong>&rarr;</strong></button></a>
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="not-found">
+        <img src="assets/404.png" />
+        <p>Oops! Invalid location 😞</p>
+      </div>
+
+      <div class="weather-box">
+        <img src="" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="days">
+        <h5>Today</h5>
+        <h6>Rain</h6>
+        <img src="assets/rain.png" width="40px" />
+        <h3>16°C</h3>
+      </div>
+      <div class="days">
+        <h5>Tomorrow</h5>
+        <h5>Sunny</h5>
+        <img src="assets/clear.png" width="40px" />
+        <h3>28°C</h3>
+      </div>
+
+      <!-- report section -->
+      <div class="logo">
+        <img src="assets/logo.png" alt="our logo" width="40%">
+      </div>
+      <div class="report">
+        <div class="details">
+          <h3 style="margin-bottom: 5px;">Today</h3>
+        <h3 id="top-temp" style="margin-bottom: 10px;"></h3>
+        </div>
+        <div class="detail-report">
+          <div class="temp-report">
+            <h3>Temperature</h3>
+            <p id="temp">
+              
+            </p>
+          </div>
+          <div class="humidity-report">
+            <h3>Humidity</h3>
+            <p id="humid">
+              
+            </p>
+          </div>
+          <div class="wind-report">
+            <h3>Wind Speed</h3>
+            <p id="wind">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
